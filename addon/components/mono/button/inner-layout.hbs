@@ -1,0 +1,13 @@
+{{#if (eq @layout "icon")}}
+  <Icon @icon={{@icon}} />
+  <span class="u-sr-only">{{yield}}</span>
+{{else}}
+  {{#if @icon}}
+    <Icon @icon={{@icon}} />
+    <div class="c-button__label">
+      {{yield}}
+    </div>
+  {{else}}
+    {{yield}}
+  {{/if}}
+{{/if}}

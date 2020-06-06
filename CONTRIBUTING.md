@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-jui`
+* `cd ember-addon-mono-ui-components`
 * `npm install`
 
 ## Linting

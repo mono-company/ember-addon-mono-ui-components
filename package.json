@@ -1,7 +1,7 @@
 {
-  "name": "ember-jui",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-addon-mono-ui-components",
+  "version": "0.0.1",
+  "description": "Mono UI components framework for Ember.",
   "keywords": [
     "ember-addon"
   ],
@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "ember-cli-babel": "^7.19.0",
-    "ember-cli-htmlbars": "^4.3.1"
+    "ember-cli-htmlbars": "^4.3.1",
+    "ember-inline-svg": "^1.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.3.0",
@@ -47,6 +48,7 @@
     "ember-source": "~3.18.0",
     "ember-source-channel-url": "^2.0.1",
     "ember-template-lint": "^2.6.0",
+    "ember-truth-helpers": "^2.1.0",
     "ember-try": "^1.4.0",
     "eslint": "^6.8.0",
     "eslint-plugin-ember": "^8.4.0",

@@ -1,0 +1,15 @@
+{{#if @side }}
+
+<div
+  class="u-spacer-{{this.side}}"
+  ...attributes
+>{{ yield }}</div>
+
+{{else}}
+
+<div
+  class="u-spacer {{if @space this.space }}"
+  ...attributes
+>{{ yield }}</div>
+
+{{/if}}

@@ -1,0 +1,16 @@
+<div class="c-alert {{this.skin}}" ...attributes>
+  <div class="c-alert__body">
+    {{#if @icon}}
+      <Badge @icon={{@icon}} @skin={{@skin}}/>
+    {{/if}}
+    <div class="c-alert__text">
+      {{#if @title}}
+        <p class="c-alert__title">{{@title}}</p>
+      {{/if}}
+      <p class="c-alert__message">{{@message}}</p>
+    </div>
+  </div>
+  {{#if @isClosable}}
+    <Button @icon="close" @layout="icon-only">Close</Button>
+  {{/if}}
+</div>

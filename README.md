@@ -1,4 +1,4 @@
-ember-jui
+ember-addon-mono-ui-components
 ==============================================================================
 
 [Short description of the addon.]
@@ -16,7 +16,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-jui
+ember install ember-addon-mono-ui-components
 ```
 
 

@@ -1,3 +1,309 @@
-<h2 id="title">Welcome to Ember</h2>
+<div style="display: flex;">
+  <div style="flex: 0 0 20rem;">
+    <Spacer class="c-styleguide-nav-wrapper">
+      <h4>Design patterns</h4>
+      <ul class="c-styleguide-nav">
+        <li><a href="#design-patterns-forms">Forms</a></li>
+        <li><a href="#design-patterns-buttons">Buttons</a></li>
+      </ul>
 
-{{outlet}}
+      <h4>Components</h4>
+      <ul class="c-styleguide-nav">
+        <li><a href="#alert-skins">Alert (skins)</a></li>
+        <li><a href="#alert-types">Alert (types)</a></li>
+        <li><a href="#avatar">Avatar</a></li>
+        <li><a href="#badge">Badge</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#button">Button toolbar</a></li>
+        {{!-- <li><a href="#header">Header</a></li> --}}
+        <li><a href="#icon">Icon</a></li>
+        <li><a href="#input">Input</a></li>
+        <li><a href="#navbar">Navbar</a></li>
+        <li><a href="#panel">Panel</a></li>
+        <li><a href="#rich">Rich text</a></li>
+        <li><a href="#spacer">Spacer</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#toolbar">Toolbar</a></li>
+      </ul>
+    </Spacer>
+  </div>
+  <div style="flex: 1 0 auto;">
+    <Spacer style="max-width: 70rem; margin: 0 auto;">
+
+      <h1 class="c-h1">Mono UI Components</h1>
+
+      <h2 class="c-h2">Introduction</h2>
+
+      <RichText>
+        <p>Mono UI components is an Ember components framework created by <a href="http://mono.company/">Mono Design</a>.</p>
+        <p>It provides several base components to build app-like in an easy manner, with a clear and consistent component API.</p>
+        <p>Every component is documented. Its available arguments are listed clearly in an arguments table. Every component has namespaced CSS to its own name, so you can easily pick and choose components. If you want to use Mono components in full or only part of it, the choice is yours.</p>
+        <p>The CSS is purposefully kept simple, as bare CSS with no dependencies.</p>
+      </RichText>
+
+      <h2 class="c-h2">Design patterns</h2>
+
+
+      <h2 class="c-h2">Components</h2>
+
+      <StyleguideComponent @name="Alert skins" id="alert-skins">
+
+        <RichText>
+          <p>The available alert skins.</p>
+        </RichText>
+
+        <StyleguideSample>
+
+          <Spacer @side="bottom">
+            <Alert @title="This is a default alert." />
+          </Spacer>
+          <Spacer @side="bottom">
+            <Alert @title="This is a success alert." @skin="success" />
+          </Spacer>
+          <Alert @title="This is an error alert." @skin="error" />
+
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Alert types" id="alert-types">
+
+        <RichText>
+          <p>The available alert types.</p>
+        </RichText>
+  
+        <StyleguideSample>
+          <p>Todo</p>
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Avatar" id="avatar">
+
+        <StyleguideSample @code="&lt;Avatar @initials=&quot;JR&quot; /&gt;">
+          <Avatar @initials="JR" />
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Badge" id="badge">
+
+        <StyleguideSample @code="&lt;Badge&gt;Default badge&lt;/Badge&gt;
+&lt;Badge @skin=&quot;success&quot;&gt;Success badge&lt;/Badge&gt;
+&lt;Badge @skin=&quot;error&quot;&gt;Error badge&lt;/Badge&gt;
+">
+          <Badge>Default badge</Badge>
+          <Badge @skin="success">Success badge</Badge>
+          <Badge @skin="error">Error badge</Badge>
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Buttons" id="buttons">
+
+        <StyleguideSample @code="&lt;Button @skin=&quot;primary&quot;&gt;Primary button&lt;/Button&gt;
+&lt;Button&gt;Regular button&lt;/Button&gt;">
+          <Button @skin="primary">Primary button</Button>
+          <Button>Regular button</Button>
+        </StyleguideSample>
+
+
+      </StyleguideComponent>
+
+
+      <StyleguideComponent @name="Button toolbar" id="button-toolbar">
+
+        <StyleguideSample @code="&lt;ButtonToolbar&gt;
+  &lt;Button&gt;Button 1&lt;/Button&gt;
+  &lt;Button&gt;Button 2&lt;/Button&gt;
+&lt;/ButtonToolbar&gt;">
+          <ButtonToolbar>
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+          </ButtonToolbar>
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Inputs" id="inputs">
+
+        <StyleguideSample @name="Text">
+          <Input @type="text" />
+        </StyleguideSample>
+
+        <StyleguideSample @name="Color">
+          <Input @type="color" />
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+
+      <StyleguideComponent @name="Icons" id="icon">
+
+        <RichText>
+          <p>The available icons.</p>
+        </RichText>
+
+        <StyleguideSample>
+          <Icon @icon="add" />
+          <Icon @icon="alert-triangle" />
+          <Icon @icon="arrow-down" />
+          <Icon @icon="arrow-left" />
+          <Icon @icon="arrow-right" />
+          <Icon @icon="arrow-up" />
+          <Icon @icon="back" />
+          <Icon @icon="calendar-plus" />
+          <Icon @icon="calendar" />
+          <Icon @icon="check" />
+          <Icon @icon="chevron-down" />
+          <Icon @icon="chevron-left" />
+          <Icon @icon="chevron-right" />
+          <Icon @icon="chevron-up" />
+          <Icon @icon="circle-check" />
+          <Icon @icon="circle-info" />
+          <Icon @icon="circle-question" />
+          <Icon @icon="clock" />
+          <Icon @icon="close" />
+          <Icon @icon="comment" />
+          <Icon @icon="delete" />
+          <Icon @icon="document-updated" />
+          <Icon @icon="document" />
+          <Icon @icon="download" />
+          <Icon @icon="edit" />
+          <Icon @icon="external-link" />
+          <Icon @icon="file" />
+          <Icon @icon="filter" />
+          <Icon @icon="import" />
+          <Icon @icon="lock-closed" />
+          <Icon @icon="lock-open" />
+          <Icon @icon="more" />
+          <Icon @icon="not-visible" />
+          <Icon @icon="paperclip" />
+          <Icon @icon="redo" />
+          <Icon @icon="remove" />
+          <Icon @icon="search" />
+          <Icon @icon="settings" />
+          <Icon @icon="sitemap" />
+          <Icon @icon="upload" />
+          <Icon @icon="user" />
+          <Icon @icon="visible" />
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Toolbar" id="toolbar">
+
+        <StyleguideSample>
+          <Toolbar>
+            <Toolbar::Group>
+              <Toolbar::Item>
+                 {{!-- <Header @level=1>Title</Header> --}}
+                 <h1 class="c-toolbar__title">I am a toolbar title.</h1>
+              </Toolbar::Item>
+            </Toolbar::Group>
+            <Toolbar::Group>
+              <Toolbar::Item>
+                <Button @variant="primary" >Save</Button>
+              </Toolbar::Item>
+              <Toolbar::Item>
+                <ButtonToolbar>
+                  <Button @layout="icon" @icon="add">Add</Button>
+                  <Button @layout="icon" @icon="delete">Delete</Button>
+                </ButtonToolbar>
+              </Toolbar::Item>
+            </Toolbar::Group>
+          </Toolbar>
+
+        </StyleguideSample>
+
+        <Spacer @side="top">
+          <Prism @code="" />
+        </Spacer>
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Navbar" id="navbar">
+
+        <h3 class="c-h3">Default</h3>
+
+        <StyleguideSample>
+        </StyleguideSample>
+
+        <h3 class="c-h3">Bottom</h3>
+
+        <StyleguideSample>
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+      <StyleguideComponent @name="Panels" id="panels">
+
+        <StyleguideSample @name="Body only" @code="<Panel>
+<Panel::Body>
+  <p>Body only.</p>
+</Panel::Body>
+</Panel>">
+
+            <Panel>
+              <Panel::Body>
+                <p>Body only.</p>
+              </Panel::Body>
+            </Panel>
+
+        </StyleguideSample>
+
+        <StyleguideSample @name="Regular panel" @code="&lt;Panel&gt;
+&lt;Panel::Header&gt;
+  Panel header
+&lt;/Panel::Header&gt;
+&lt;Panel::Body&gt;
+  Body content
+&lt;/Panel::Body&gt;
+&lt;/Panel&gt;">
+          <Panel>
+            <Panel::Header>
+              Panel header
+            </Panel::Header>
+            <Panel::Body>
+              Body content
+            </Panel::Body>
+          </Panel>
+        </StyleguideSample>
+      
+
+        {{!-- <h2 class="c-h3">Double body</h2>
+
+        <h2 class="c-h3">Panel with actions</h2> --}}
+
+      </StyleguideComponent>
+
+      <StyleguideComponent id="rich-text" @name="Rich text">
+
+        <RichText>
+          <p>Renders text as rich text.</p>
+        </RichText>
+
+        <StyleguideSample @code="&lt;RichText&gt;
+&lt;p&gt;Hello world.&lt;/p&gt;
+&lt;p&gt;This is rich text.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/RichText&gt;">
+          <RichText>
+            <p>Hello world.</p>
+            <p>This is rich text.</p>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ul>
+          </RichText>
+        </StyleguideSample>
+
+      </StyleguideComponent>
+
+    </Spacer>
+  </div>
+</div>

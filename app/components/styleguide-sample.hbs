@@ -1,0 +1,9 @@
+<h4 class="c-h4">{{ @name }}</h4>
+
+<div class="c-styleguide-sample" ...attributes>
+  {{yield}}
+</div>
+
+{{#if @code}}
+  <pre class="c-prism"><code>{{ @code }}</code></pre>
+{{/if}}

@@ -1,0 +1,263 @@
+/* ==========================================================================
+  All components are namespaced with .c-
+
+  For correct rendering, please use a CSS reset, and then enter the following CSS locally in your app. It it not included
+  to prevent rendering conflicts.
+  
+   ========================================================================== */
+
+/* ==========================================================================
+  Avatar
+   ========================================================================== */
+
+.c-avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 100%;
+  background: #DDD;
+}
+
+
+/* ==========================================================================
+  Alert
+   ========================================================================== */
+
+.c-alert {
+  background: #EEE;
+  padding: 1.2rem;
+}
+
+.c-alert--success {
+  background: #CDEBDB;
+  color: #295B40;
+  padding: 1.2rem;
+}
+
+.c-alert--error {
+  background: #E5D5D0;
+  color: #67453B;
+  padding: 1.2rem;
+}
+
+/* ==========================================================================
+  Badge
+   ========================================================================== */
+
+.c-badge {
+  background: #DDD;
+  color: #666;
+  border-radius: 1.2rem;
+  padding: 0.3rem 1.2rem;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.c-badge--success {
+  background: #CDEBDB;
+  color: #295B40;
+}
+
+.c-badge--error {
+  background: #E5D5D0;
+  color: #67453B;
+}
+
+
+/* ==========================================================================
+  Rich text
+   ========================================================================== */
+
+.c-rich-text h1,
+.c-h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.c-rich-text h2,
+.c-h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.c-rich-text h3,
+.c-h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.c-rich-text h4,
+.c-h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.c-rich-text ul {
+  list-style: disc;
+  padding: 0 0 1.6rem 2.4rem;
+}
+
+.c-rich-text p {
+  margin: 1.6rem 0;
+}
+
+/* ==========================================================================
+  Input
+   ========================================================================== */
+
+.c-input {
+  border: .1rem solid #CCC;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.3rem;
+}
+
+/* ==========================================================================
+  Button
+   ========================================================================== */
+
+.c-button {
+  border: none;
+  background: #DDD;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+}
+
+.c-button--primary {
+  background: #0C64F3;
+  color: #FFF;
+}
+
+/* ==========================================================================
+  Stack
+   ========================================================================== */
+
+.c-stack > * {
+  margin: 1rem 0;
+}
+
+/* ==========================================================================
+  Panel
+   ========================================================================== */
+
+.c-panel {
+  border: .1rem solid #CCC;
+}
+
+.c-panel__body {
+  padding: 1.6rem;
+}
+
+.c-panel__header {
+  padding: 1.6rem;
+  border-bottom: .1rem solid #CCC;
+}
+
+.c-panel__body + .c-panel__body {
+  border-top: .1rem solid #CCC;
+}
+
+/* ==========================================================================
+  Button toolbar
+   ========================================================================== */
+
+.c-button-toolbar .c-button {
+  margin-right: 1rem;
+}
+
+.c-button-toolbar .c-button:last-child {
+  margin: 0;
+}
+
+/* ==========================================================================
+  Toolbar
+  ---
+  Position elements on left and right in a structured manner
+   ========================================================================== */
+
+.c-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-toolbar__group {
+  display: flex;
+}
+
+.c-toolbar__group:first-child .c-toolbar__item {
+  margin-right: 2rem;
+}
+
+.c-toolbar__group:lasrt-child .c-toolbar__item {
+  margin-left: 2rem;
+}
+
+/* ==========================================================================
+  Component: navbar
+  ---
+  A container for navigational elements
+  ========================================================================== */
+
+.c-navbar {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.c-navbar > .c-toolbar {
+  flex: 1 0 auto;
+}
+
+.c-navbar--auto {
+  height: auto;
+}
+
+.c-navbar--white {
+  background: #FFF;
+}
+
+.c-navbar--gray-100 {
+  background: #E5E5E5;
+}
+
+.c-navbar--gray-150 {
+  background: #D9D9D9;
+}
+
+/* Bordered equivalents
+  ========================================================================== */
+
+.c-navbar--bordered-top {
+  border-top: .1rem solid #B2B2B2;
+}
+
+.c-navbar--bordered-bottom {
+  border-bottom: .1rem solid #B2B2B2;
+}
+
+/* ==========================================================================
+  Spacer
+   ========================================================================== */
+
+.u-spacer {
+  padding: 1rem;
+}
+
+.u-spacer-bottom {
+  padding-bottom: 1.6rem;
+}
+
+.u-spacer-top {
+  padding-top: 1.6rem;
+}

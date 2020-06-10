@@ -1,7 +1,11 @@
 ember-addon-mono-ui-components
 ==============================================================================
 
-[Short description of the addon.]
+Use this addon to provide a baseline UI for your Ember app, using Octane components.
+
+You can view the documentation at https://ember-addon-mono-ui-components.now.sh.
+
+If you are starting from scratch, it's probably best to copy the addon's app.css to your own app.css. It contains a CSS reset and sets up rem-based font sizing (where 1rem = 10px).
 
 
 Compatibility

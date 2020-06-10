@@ -1,1 +1,13 @@
-<h1>{{yield}}</h1>
+{{#if (eq @level "1")}}
+  <h1 class="{{this.skin}}">{{yield}}</h1>
+{{/if}}
+{{#if (eq @level "2")}}
+  <h2 class="{{this.skin}}">{{yield}}</h2>
+{{/if}}
+{{#if (eq @level "3")}}
+  <h3 class="{{this.skin}}">{{yield}}</h3>
+{{/if}}
+{{#if (eq @level "4")}}
+  <h4 class="{{this.skin}}">{{yield}}</h4>
+{{/if}}
+

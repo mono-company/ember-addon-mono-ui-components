@@ -10,4 +10,11 @@ export default class Header extends Component {
     }
   }
 
+  get skin() {
+    if (this.args.skin)
+      return "c-h"+this.args.skin;
+    else
+      return "c-h1";
+  }
+
 }

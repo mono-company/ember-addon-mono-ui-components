@@ -65,7 +65,6 @@
   color: #67453B;
 }
 
-
 /* ==========================================================================
   Rich text
    ========================================================================== */
@@ -73,6 +72,7 @@
 .c-rich-text h1,
 .c-h1 {
   font-size: 3.2rem;
+  margin: 0 0 2.4rem;
   font-weight: 500;
   color: #000;
 }
@@ -80,6 +80,7 @@
 .c-rich-text h2,
 .c-h2 {
   font-size: 2.4rem;
+  margin: 0 0 2.4rem;
   font-weight: 500;
   color: #000;
 }
@@ -87,6 +88,7 @@
 .c-rich-text h3,
 .c-h3 {
   font-size: 2.1rem;
+  margin: 0 0 2.1rem;
   font-weight: 500;
   color: #000;
 }
@@ -94,18 +96,57 @@
 .c-rich-text h4,
 .c-h4 {
   font-size: 1.6rem;
+  margin: 1.6rem 0;
   font-weight: 500;
   color: #000;
 }
 
 .c-rich-text ul {
   list-style: disc;
-  padding: 0 0 1.6rem 2.4rem;
+  padding: 0 0 0 2.4rem;
+  margin: 1.6rem 0;
+}
+
+.c-rich-text ol {
+  list-style: decimal;
+  padding: 0 0 0 2.4rem;
+  margin: 1.6rem 0;
 }
 
 .c-rich-text p {
   margin: 1.6rem 0;
 }
+
+/* Make tables render directly in .c-rich-text 
+   ========================================================================== */
+
+.c-rich-text table {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.c-rich-text table td,
+.c-rich-text table th {
+  vertical-align: middle;
+  padding: 0.6rem;
+  border-bottom: .1rem solid #E6E8EB; /* gray-200 */
+}
+
+.c-rich-text table th {
+  border-bottom-width: .2rem; 
+  text-align: left;
+  font-weight: 500;
+}
+
+.c-rich-text table tr:nth-child(odd) td {
+  background: #F4F5F6; /* gray 100 */
+}
+
+.c-rich-text table tr:last-child td {
+  border-bottom-width: 0
+}
+
 
 /* ==========================================================================
   Input
@@ -198,7 +239,7 @@
   margin-right: 2rem;
 }
 
-.c-toolbar__group:lasrt-child .c-toolbar__item {
+.c-toolbar__group:last-child .c-toolbar__item {
   margin-left: 2rem;
 }
 
